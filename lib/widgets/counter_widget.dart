@@ -19,9 +19,12 @@ class _CounterWidgetState extends State<CounterWidget> {
   Widget build(BuildContext context) {
     int currentCounter = widget.counter;
     return Container(
-      padding: EdgeInsets.all(3),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5), color: kPrimary2Color),
+          borderRadius: BorderRadius.circular(5),
+          color: cardColor,
+          boxShadow: [
+            BoxShadow(color: kPrimaryColor, blurRadius: 3, spreadRadius: 1)
+          ]),
       child: Row(
         children: [
           InkWell(
@@ -40,19 +43,24 @@ class _CounterWidgetState extends State<CounterWidget> {
                   print("azal");
                 });
               },
-              child: Icon(
-                Icons.remove,
-                color: Colors.white,
-                size: 10,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 3),
+                child: Icon(
+                  Icons.remove,
+                  color: kPrimary2Color,
+                  size: 12,
+                ),
               )),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 3),
-            padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(3), color: Colors.white),
+            padding: EdgeInsets.symmetric(horizontal: 11, vertical: 7),
+            decoration: BoxDecoration(color: kPrimary2Color),
             child: Text(
               "${widget.counter}", //TODO populerFoodsStatic[index]['counter'] GÜNCELLENMESİ
-              style: TextStyle(color: Colors.black, fontSize: 9),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold),
             ),
           ),
           InkWell(
@@ -63,10 +71,13 @@ class _CounterWidgetState extends State<CounterWidget> {
                       "art"); //TODO populerFoodsStatic[index]['counter'] GÜNCELLENMESİ
                 });
               },
-              child: Icon(
-                Icons.add,
-                color: Colors.white,
-                size: 10,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 3),
+                child: Icon(
+                  Icons.add,
+                  color: kPrimary2Color,
+                  size: 12,
+                ),
               )),
         ],
       ),

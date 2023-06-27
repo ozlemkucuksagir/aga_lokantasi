@@ -303,13 +303,13 @@ class _OrderItemsState extends State<OrderItems> {
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: kPrimaryMidColor,
-                                                fontSize: 11),
+                                                fontSize: 13),
                                             children: <TextSpan>[
                                               TextSpan(
                                                 text: " TL",
                                                 style: TextStyle(
                                                     color: kPrimaryMidColor,
-                                                    fontSize: 10),
+                                                    fontSize: 11),
                                               )
                                             ]),
                                       ),
