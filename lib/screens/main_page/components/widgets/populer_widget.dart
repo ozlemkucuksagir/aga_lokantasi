@@ -225,7 +225,7 @@ class _PopulerFoodState extends State<PopulerFood> {
                                           Center(
                                             child: Container(
                                               height: size.height * 0.05,
-                                              width: size.width * 0.3,
+                                              width: size.width * 0.35,
                                               child: ElevatedButton(
                                                 style: ElevatedButton.styleFrom(
                                                   backgroundColor:
@@ -237,10 +237,24 @@ class _PopulerFoodState extends State<PopulerFood> {
                                                 child: Padding(
                                                   padding:
                                                       const EdgeInsets.all(2.0),
-                                                  child: Text(
-                                                    "Sepete ekle",
-                                                    style:
-                                                        TextStyle(fontSize: 12),
+                                                  child: Row(
+                                                    children: [
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(8.0),
+                                                        child: Icon(
+                                                          Icons
+                                                              .add_shopping_cart_sharp,
+                                                          size: 20,
+                                                        ),
+                                                      ),
+                                                      Text(
+                                                        "Sepete ekle",
+                                                        style: TextStyle(
+                                                            fontSize: 12),
+                                                      ),
+                                                    ],
                                                   ),
                                                 ),
                                               ),

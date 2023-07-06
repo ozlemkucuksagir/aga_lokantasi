@@ -1,5 +1,6 @@
 // @dart=3.0
 import 'package:aga_lokantasi/components/constant.dart';
+import 'package:aga_lokantasi/screens/ExpansiolTile.dart';
 import 'package:aga_lokantasi/screens/main_page/main_page.dart';
 import 'package:aga_lokantasi/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
           )),
-      home: NavigationBarMy(),
+      home: ExpansionTileExamplePage(),
     );
   }
 }

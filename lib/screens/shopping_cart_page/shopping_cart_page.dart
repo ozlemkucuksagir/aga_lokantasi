@@ -16,7 +16,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
     return Background(
       child: ShoppingCartView(),
       title: "Sepetim",
-      isHome: true,
+      isHome: false,
     );
   }
 }
